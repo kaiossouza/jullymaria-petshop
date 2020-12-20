@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
 import clinica from '../assets/clinica.jpg';
-import dermatologia from '../assets/dermatologia.jpg';
+import dermatologia from '../assets/landing-bg.jpg';
 import felina from '../assets/felina.jpg';
 import petshop from '../assets/petshop.jpg';
-import boutique from '../assets/boutique.jpg';
-import canina from '../assets/canina.jpg';
+import boutique from '../assets/roupas.jpeg';
+import canina from '../assets/banho.jpg';
 
 const headerStyle = {
   color: "#e91e63",
@@ -65,7 +65,7 @@ class Resume extends Component {
                <div className="twelve columns">
                  {/* {education} */}
                  {/* <h3>Pet Shop</h3> */}
-                 <img src={petshop}></img>
+                 <img src={boutique}></img>
                  <p>A Jully Maria conta com diversos produtos de qualidade para o seu pet, como rações, petiscos, brinquedos e medicamentos.</p>
                </div>
             </div>
@@ -82,9 +82,9 @@ class Resume extends Component {
                <div className="twelve columns">
                  {/* {education} */}
                  {/* <h3>Pet Shop</h3> */}
-                 <img src={boutique}></img>
+                 <img src={petshop}></img>
                  <p>
-                  Seu pet também merece estar na moda e confortável. Encontre tudo que o seu bichinho precisa na Pet Boutique da Jully Maria. Disponível roupas e acessórios das melhores marcas, como Maristella, Pata Chic, Mallo, Simba Lovers, Bicho com Luxo, Du Dog Vest, Zoo Pet, Zeedog, K9 Spirit e Free Faro.
+                  Seu pet também merece estar na moda e confortável. Encontre tudo que o seu bichinho precisa na Pet Boutique da Jully Maria. Disponível roupas e acessórios das melhores marcas.
                  </p>
                 </div>
             </div>

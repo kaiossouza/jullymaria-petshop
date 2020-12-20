@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import equipe from '../assets/equipe.jpg';
+import equipe from '../assets/prazer.jpeg';
 
 const headerStyle = {
    color: "#FFF",
