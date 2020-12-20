@@ -54,7 +54,7 @@ header .banner {
    text-align: center;
 }
 
-header .banner-text { width: 100%; }
+header .banner-text { width: 100%; text-align: right; }
 header .banner-text h1 {
    font: 90px/1.1em 'opensans-bold', sans-serif;
    color: #fff;
@@ -164,7 +164,7 @@ ul#nav li a {
    line-height: 32px;
 	text-decoration: none;
    text-align: left;
-   color: #fff;
+   color: rgba(15, 155, 143, 0.767);
 
 	-webkit-transition: color .2s ease-in-out;
 	-moz-transition: color .2s ease-in-out;
@@ -174,17 +174,21 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #fe6928; }
+ul#nav li.current a { color: #fe28a5; }
 
 
 /* ------------------------------------------------------------------ */
 /* c. About Section
 /* ------------------------------------------------------------------ */
 
+ul#nav.nav {
+   background: white;
+}
+
 #about {
-   background: #000524;
-   padding-top: 96px;
-   padding-bottom: 66px;
+   background: #20b3b5;
+   padding-top: 3%;
+   padding-bottom: 2%;
    overflow: hidden;
 }
 
@@ -198,7 +202,7 @@ ul#nav li.current a { color: #fe6928; }
 }
 #about p {
    line-height: 30px;
-   color: #ccc;
+   color: #fff;
 }
 #about .profile-pic {
    position: relative;
@@ -232,21 +236,25 @@ ul#nav li.current a { color: #fe6928; }
 
 #resume {
    background: #fff;
-   padding-top: 90px;
-   padding-bottom: 72px;
+   padding-top: 3%;
+   padding-bottom: 2%;
    overflow: hidden;
 }
 
 #resume a, #resume a:visited  { color: #0762f9; }
 #resume a:hover, #resume a:focus { color: #313131; }
 
-#resume h1 {
+/* #resume h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
-}
+} */
 #resume h1 span {
-   border-bottom: 3px solid #0762f9;
+   border-bottom: 3px solid #e91e63;
+   padding-bottom: 6px;
+}
+#resume h2 span {
+   border-bottom: 3px solid #e91e63;
    padding-bottom: 6px;
 }
 #resume h3 {
