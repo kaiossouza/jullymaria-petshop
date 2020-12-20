@@ -420,18 +420,22 @@ ul#nav.nav {
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: #ebeeee;
+   /* background: #ebeeee;
    padding-top: 90px;
-   padding-bottom: 60px;
+   padding-bottom: 60px; */
+   background: #20b3b5;
+   padding-top: 3%;
+   padding-bottom: 2%;
+   overflow: hidden;
 }
-#portfolio h1 {
+/* #portfolio h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
    margin-bottom: 48px;
    color: #95A3A3;
-}
+} */
 
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }

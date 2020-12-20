@@ -111,31 +111,97 @@
       {
         "title":"Canadian Wanderlust",
         "category":"My Travel Blog for my post-university travels",
-        "image":"canadian-wanderlust.jpg",
+        "image":"carrossel/1.jpg",
         "url":"https://www.canadianwanderlust.com"
       },
       {
         "title":"Fury Fighting Gear",
         "category":"(offline now) A fighting gear company I started",
-        "image":"fury-fighting-gear.jpg",
+        "image":"carrossel/2.jpg",
         "url":"http://www.timbakerdev.com"
       },
       {
         "title":"Original Thai Food",
         "category":"Website I built for a restaurant I like in Thailand",
-        "image":"original-thai-food.jpg",
+        "image":"carrossel/3.jpg",
         "url":"http://www.timbakerdev.com/originalthaifood.github.io"
       },
       {
         "title":"Resume Website",
         "category":"A React based resume website template",
-        "image":"resume-website.jpg",
+        "image":"carrossel/4.jpg",
         "url":"http://www.timbakerdev.com"
       },
       {
         "title":"Smirkspace",
         "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"smirkspace.jpg",
+        "image":"carrossel/5.jpg",
+        "url":"http://www.smirkspace.com"
+      },
+      {
+        "title":"Smirkspace",
+        "category":"(MVP Only) A React and Meteor based chat University project.",
+        "image":"carrossel/6.jpg",
+        "url":"http://www.smirkspace.com"
+      },
+      {
+        "title":"Smirkspace",
+        "category":"(MVP Only) A React and Meteor based chat University project.",
+        "image":"carrossel/7.jpg",
+        "url":"http://www.smirkspace.com"
+      },
+      {
+        "title":"Smirkspace",
+        "category":"(MVP Only) A React and Meteor based chat University project.",
+        "image":"carrossel/8.jpg",
+        "url":"http://www.smirkspace.com"
+      },
+      {
+        "title":"Smirkspace",
+        "category":"(MVP Only) A React and Meteor based chat University project.",
+        "image":"carrossel/9.jpg",
+        "url":"http://www.smirkspace.com"
+      },
+      {
+        "title":"Smirkspace",
+        "category":"(MVP Only) A React and Meteor based chat University project.",
+        "image":"carrossel/10.jpg",
+        "url":"http://www.smirkspace.com"
+      },
+      {
+        "title":"Smirkspace",
+        "category":"(MVP Only) A React and Meteor based chat University project.",
+        "image":"carrossel/11.jpg",
+        "url":"http://www.smirkspace.com"
+      },
+      {
+        "title":"Smirkspace",
+        "category":"(MVP Only) A React and Meteor based chat University project.",
+        "image":"carrossel/12.jpg",
+        "url":"http://www.smirkspace.com"
+      },
+      {
+        "title":"Smirkspace",
+        "category":"(MVP Only) A React and Meteor based chat University project.",
+        "image":"carrossel/13.jpg",
+        "url":"http://www.smirkspace.com"
+      },
+      {
+        "title":"Smirkspace",
+        "category":"(MVP Only) A React and Meteor based chat University project.",
+        "image":"carrossel/14.jpg",
+        "url":"http://www.smirkspace.com"
+      },
+      {
+        "title":"Smirkspace",
+        "category":"(MVP Only) A React and Meteor based chat University project.",
+        "image":"carrossel/15.jpg",
+        "url":"http://www.smirkspace.com"
+      },
+      {
+        "title":"Smirkspace",
+        "category":"(MVP Only) A React and Meteor based chat University project.",
+        "image":"carrossel/16.jpg",
         "url":"http://www.smirkspace.com"
       }
     ]
