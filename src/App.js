@@ -10,6 +10,28 @@ import Contact from './Components/Contact';
 import Portfolio from './Components/Portfolio';
 import Localization from './Components/Localization';
 
+import whatsapp from './assets/whatsapp.png';
+
+const whatsappStyle = {
+  position: 'absolute',
+  bottom: '0',
+  right: '0',
+  width: '80%',
+  height: 'auto',
+  border: 'none',
+  zIndex: '99',
+  transition: 'all .25s ease',
+  textAlign: 'center',
+  padding: '0'
+}
+
+const whatsappDivStyle = {
+  position: 'fixed',
+  bottom: '-4px',
+  width: '30vh',
+  right: '10px'
+}
+
 class App extends Component {
 
   constructor(props){
@@ -46,14 +68,19 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header data={this.state.resumeData.main}/>
-        <About data={this.state.resumeData.main}/>
-        <Resume data={this.state.resumeData.resume}/>
-        <Portfolio data={this.state.resumeData.portfolio}/>
-        {/* <Contact data={this.state.resumeData.main}/> */}
-        <Localization />
-        <Contact />
-        <Footer data={this.state.resumeData.main}/>
+        <div>
+          <Header data={this.state.resumeData.main}/>
+          <About data={this.state.resumeData.main}/>
+          <Resume data={this.state.resumeData.resume}/>
+          <Portfolio data={this.state.resumeData.portfolio}/>
+          {/* <Contact data={this.state.resumeData.main}/> */}
+          <Localization />
+          <Contact />
+          <Footer data={this.state.resumeData.main}/>
+        </div>
+        <div style={whatsappDivStyle}>
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=5548988330048"><img src={whatsapp} id="fixedbutton" style={whatsappStyle}/></a>
+        </div>
       </div>
     );
   }

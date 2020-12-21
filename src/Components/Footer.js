@@ -19,9 +19,9 @@ class Footer extends Component {
      <div className="row">
         <div className="twelve columns">
            <ul className="social-links">
-              <li key="facebook"><a href="https://www.facebook.com/jullymariapet"><FontAwesomeIcon icon={faFacebook} /></a></li>
-              <li key="instagram"><a href="https://www.instagram.com/jullymariapet/"><FontAwesomeIcon icon={faInstagram} /></a></li>
-              <li key="whatsapp"><a href="https://api.whatsapp.com/send?phone=5548988330048"><FontAwesomeIcon icon={faWhatsapp} /></a></li>
+              <li key="facebook"><a target="_blank" href="https://www.facebook.com/jullymariapet"><FontAwesomeIcon icon={faFacebook} /></a></li>
+              <li key="instagram"><a target="_blank" href="https://www.instagram.com/jullymariapet/"><FontAwesomeIcon icon={faInstagram} /></a></li>
+              <li key="whatsapp"><a target="_blank" href="https://api.whatsapp.com/send?phone=5548988330048"><FontAwesomeIcon icon={faWhatsapp} /></a></li>
            </ul>
 
            <ul className="copyright">
