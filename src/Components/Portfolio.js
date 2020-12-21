@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
 
+import image1 from '../assets/carrossel/1.jpg';
+
 const customStyles = {
   content : {
     top                   : '50%',
@@ -47,18 +49,18 @@ class Portfolio extends Component {
     if (this.props.data) {
       var projects = this.props.data.projects.map(function (projects) {
         var projectImage = 'images/portfolio/' + projects.image;
-        
+        var image = require(`../assets/${projects.image}`);
         return (
           <div key={projects.title} className="columns portfolio-item">
-            <div className="item-wrap">
+            <div className="item-wrap" style={{backgroundImage: `url(${image})`, backgroundPosition: 'left', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', height: '25vh', width: '25vh' }}>
               <a onClick={() => { openModal(projectImage); }} title={projects.title}>
-                <img alt={projects.title} src={projectImage} />
-                {/* <div className="overlay">
+                {/* <img alt={projects.title} src={projectImage} /> */}
+                <div className="overlay">
                   <div className="portfolio-item-meta">
-                    <h5>{projects.title}</h5>
-                    <p>{projects.category}</p>
+                    <h5>Clique Aqui para Maximizar</h5>
+                    {/* <p>{projects.category}</p> */}
                   </div>
-                </div> */}
+                </div>
               </a>
             </div>
           </div>

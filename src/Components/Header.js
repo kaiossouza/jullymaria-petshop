@@ -9,24 +9,44 @@ var sectionStyle = {
    backgroundPosition: 'left',
    backgroundRepeat: 'no-repeat',
    backgroundSize: 'cover'
- };
+ }; 
 
  var logoStyle = {
    width: '40%'
  };
 
  var logoMobStyle = {
-   width: '40%',
+   width: '60%',
    paddingBottom: '25%'
  };
 
  var bannerStyle = {
    width: '100%', 
-   textAlign: 'right'
+   //textAlign: 'right'
  }
 
  var bannerMobStyle = {
    width: '100%'
+ }
+
+ var pStyle = {
+   // marginRight: '8vh',
+   // marginLeft: '80vh',
+   fontSize: '10vh',
+   lineHeight: '12vh',
+   textAlign: 'center',
+   color: '#11abb0',
+   fontWeight: 'bold',
+   textShadow: '2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff'
+ }
+
+ var pMobStyle = {
+   fontSize: '6vh',
+   lineHeight: '7vh',
+   textAlign: 'center',
+   color: '#11abb0',
+   fontWeight: 'bold',
+   textShadow: '2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff'
  }
 
 class Header extends Component {
@@ -41,17 +61,6 @@ class Header extends Component {
    }
 
   render() {     
-
-    if(this.props.data){
-      //var project = this.props.data.project;
-      //var github = this.props.data.github;
-      //var name = this.props.data.name;
-      //var description= this.props.data.description;
-      // var city= this.props.data.address.city;
-      // var networks= this.props.data.social.map(function(network){
-      //   return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
-      // })
-    }
 
     return (
       <header id="home" style={sectionStyle}>
@@ -70,10 +79,10 @@ class Header extends Component {
          </ul>
       </nav>
 
-      <div className="row banner">
-      
+      <div className="row banner">      
          <div style={this.state.matches ? bannerStyle : bannerMobStyle }>
             <img src={logo} style={this.state.matches ? logoStyle : logoMobStyle }></img>
+            <p style={this.state.matches ? pStyle : pMobStyle }>Pet Shop e Clínica Veterinária</p>
             {/* <h1 className="responsive-headline">{name}</h1>
             <h3>{description}.</h3>
             <hr />
