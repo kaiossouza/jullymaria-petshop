@@ -6,7 +6,7 @@ import logo from '../assets/apple-icon.png';
 
 var sectionStyle = {
    backgroundImage: `url(${background})`,
-   backgroundPosition: 'center',
+   backgroundPosition: 'left',
    backgroundRepeat: 'no-repeat',
    backgroundSize: 'cover'
  };
@@ -15,8 +15,32 @@ var sectionStyle = {
    width: '40%'
  };
 
+ var logoMobStyle = {
+   width: '40%',
+   paddingBottom: '25%'
+ };
+
+ var bannerStyle = {
+   width: '100%', 
+   textAlign: 'right'
+ }
+
+ var bannerMobStyle = {
+   width: '100%'
+ }
+
 class Header extends Component {
-  render() {
+   constructor(props) {
+      super(props)
+      this.state = { matches: window.matchMedia("(min-width: 768px)").matches };
+   }
+  
+   componentDidMount() {
+      const handler = e => this.setState({matches: e.matches});
+      window.matchMedia("(min-width: 768px)").addListener(handler);
+   }
+
+  render() {     
 
     if(this.props.data){
       //var project = this.props.data.project;
@@ -48,8 +72,8 @@ class Header extends Component {
 
       <div className="row banner">
       
-         <div className="banner-text">
-            <img src={logo} style={logoStyle}></img>
+         <div style={this.state.matches ? bannerStyle : bannerMobStyle }>
+            <img src={logo} style={this.state.matches ? logoStyle : logoMobStyle }></img>
             {/* <h1 className="responsive-headline">{name}</h1>
             <h3>{description}.</h3>
             <hr />

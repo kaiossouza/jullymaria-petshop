@@ -54,7 +54,7 @@ header .banner {
    text-align: center;
 }
 
-header .banner-text { width: 100%; text-align: right; }
+/* header .banner-text { width: 100%; text-align: right; } */
 header .banner-text h1 {
    font: 90px/1.1em 'opensans-bold', sans-serif;
    color: #fff;
@@ -229,12 +229,69 @@ ul#nav.nav {
    font-size: 20px;
 }
 
+/* ------------------------------------------------------------------ */
+/* d. New contact Section
+/* ------------------------------------------------------------------ */
+
+#contact {
+   background: #20b3b5;
+   padding-top: 3%;
+   padding-bottom: 2%;
+   overflow: hidden;
+}
+
+#contact a, #contact a:visited  { color: #fff; }
+#contact a:hover, #contact a:focus { color: #0762f9; }
+
+#contact h2 {
+   font: 22px/30px 'opensans-bold', sans-serif;
+   color: #fff;
+   margin-bottom: 12px;
+}
+#contact p {
+   /* line-height: 30px; */
+   color: #fff;
+}
+#contact .profile-pic {
+   position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
+}
+#contact .contact-details { width: 41.66667%; }
+#contact .download {
+   width: 58.33333%;
+   padding-top: 6px;
+}
+#contact .main-col { padding-right: 5%; }
+#contact .download .button {
+   margin-top: 6px;
+   background: #444;
+}
+#contact .download .button:hover {
+   background: #fff;
+   color: #2B2B2B;
+}
+#contact .download .button i {
+   margin-right: 15px;
+   font-size: 20px;
+}
+#contact > li,#contact > h5,#contact > i {
+   color: white;
+}
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
 /* ------------------------------------------------------------------ */
 
 #resume {
+   background: #fff;
+   padding-top: 3%;
+   padding-bottom: 2%;
+   overflow: hidden;
+}
+
+#localization {
    background: #fff;
    padding-top: 3%;
    padding-bottom: 2%;
@@ -257,6 +314,23 @@ ul#nav.nav {
    border-bottom: 3px solid #e91e63;
    padding-bottom: 6px;
 }
+
+#localization h1 span {
+   border-bottom: 3px solid #e91e63;
+   padding-bottom: 6px;
+}
+
+#localization h2 span {
+   border-bottom: 3px solid #e91e63;
+   padding-bottom: 8px;
+   font-size: 18px!important;
+}
+
+#localization > h2 {
+   font-size: 18px!important;
+   text-align: center;
+}
+
 #resume h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
 }
@@ -800,7 +874,7 @@ call-to-action .button {
 /* h. Contact Section
 /* ------------------------------------------------------------------ */
 
-#contact {
+/* #contact {
    background: #191919;
    padding-top: 96px;
    padding-bottom: 102px;
@@ -817,8 +891,8 @@ call-to-action .button {
    letter-spacing: 3px;
    color: #EBEEEE;
    margin-bottom: 6px;
-}
-#contact h1 span { display: none; }
+} */
+/* #contact h1 span { display: none; }
 #contact h1:before {
    font-family: 'FontAwesome';
    content: "\f0e0";
@@ -839,7 +913,7 @@ call-to-action .button {
    font: 18px/36px 'opensans-light', sans-serif;
    padding-right: 3%;
 }
-#contact .header-col { padding-top: 6px; }
+#contact .header-col { padding-top: 6px; } */
 
 
 /* contact form */
@@ -939,15 +1013,16 @@ call-to-action .button {
 
 footer {
    padding-top: 48px;
-   margin-bottom: 48px;
-   color: #303030;
+   padding-bottom: 48px;
+   color: #e91e63;
    font-size: 14px;
    text-align: center;
    position: relative;
+   background: white;
 }
 
-footer a, footer a:visited { color: #525252; }
-footer a:hover, footer a:focus { color: #fff; }
+footer a, footer a:visited { color: #e91e63; }
+footer a:hover, footer a:focus { color: #e91e63; }
 
 /* copyright */
 footer .copyright {

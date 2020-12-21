@@ -4,7 +4,13 @@
   "homepage": "./",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-regular-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.13",
     "anix": "^0.3.3",
+    "google-maps-react": "^2.0.6",
     "jquery": "^3.2.1",
     "particles-bg": "^2.3.12",
     "react": "^16.2.0",
