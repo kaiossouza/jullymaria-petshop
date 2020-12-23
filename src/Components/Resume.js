@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import clinica from '../assets/clinica.jpg';
-import dermatologia from '../assets/landing-bg.jpg';
+import dermatologia from '../assets/landing-bg_old.jpg';
 import felina from '../assets/felina.jpg';
 import petshop from '../assets/petshop.jpg';
 import boutique from '../assets/roupas.jpeg';

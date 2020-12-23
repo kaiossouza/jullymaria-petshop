@@ -6,7 +6,7 @@ import logo from '../assets/apple-icon.png';
 
 var sectionStyle = {
    backgroundImage: `url(${background})`,
-   backgroundPosition: 'left',
+   backgroundPosition: 'center',
    backgroundRepeat: 'no-repeat',
    backgroundSize: 'cover'
  }; 

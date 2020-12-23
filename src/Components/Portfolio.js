@@ -26,10 +26,14 @@ const headerStyle = {
 
 class Portfolio extends Component {
 
-  state = {
-    modalIsOpen: false,
-    image: ""
-  }  
+  constructor(props) {
+    super(props)
+    this.state = { 
+      modalIsOpen: false,
+      image: "",
+      matches: window.matchMedia("(min-width: 768px)").matches 
+    };
+  }
 
   render() { 
     const closeModal = () => {
@@ -46,13 +50,28 @@ class Portfolio extends Component {
       });
     }
 
-    if (this.props.data) {
+    if (this.props.data) {      
+      const isDesktop = this.state.matches;
       var projects = this.props.data.projects.map(function (projects) {
         var projectImage = 'images/portfolio/' + projects.image;
         var image = require(`../assets/${projects.image}`);
+
+        var style = {
+          backgroundImage: `url(${image})`, 
+          backgroundPosition: 'top', 
+          backgroundRepeat: 'no-repeat', 
+          backgroundSize: 'cover', 
+          height: '25vh', 
+          width: '25vh' 
+        };
+  
+        if(!isDesktop){
+          style.width = "100%";
+        }
+
         return (
           <div key={projects.title} className="columns portfolio-item">
-            <div className="item-wrap" style={{backgroundImage: `url(${image})`, backgroundPosition: 'left', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', height: '25vh', width: '25vh' }}>
+            <div className="item-wrap" style={style}>
               <a onClick={() => { openModal(projectImage); }} title={projects.title}>
                 {/* <img alt={projects.title} src={projectImage} /> */}
                 <div className="overlay">
