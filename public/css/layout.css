@@ -309,6 +309,7 @@ ul#nav.nav {
 #resume h1 span {
    border-bottom: 3px solid #e91e63;
    padding-bottom: 6px;
+   line-height: 10vh;
 }
 #resume h2 span {
    border-bottom: 3px solid #e91e63;

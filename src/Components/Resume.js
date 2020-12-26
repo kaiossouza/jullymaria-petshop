@@ -28,8 +28,36 @@ class Resume extends Component {
     }
     return color;
   }
+
+  getWindowDimensions() {
+      const { innerWidth: width, innerHeight: height } = window;
+      return {
+         width,
+         height
+      };
+   }
+
+   getHeader(title) {
+      if(this.getWindowDimensions().width <= 768){
+         return (
+            <div>
+               <h1 style={{textAlign: 'center'}}><span>{title}</span></h1>
+            </div>
+         );
+      }
+      else {
+         var titles = title.split(' ').map(function (t) {
+            return (<h1><span>{t}</span></h1>);
+         })
+
+         return (<div>{titles}</div>);
+      }
+   }
   
   render() {
+   const isSmallScreen = this.getWindowDimensions().width <= 768;
+   var headerCol = isSmallScreen ? "twelve" : "three";
+   var bodyCol = isSmallScreen ? "twelve" : "nine";
    return (
       <section id="resume">
          <div>
@@ -64,29 +92,25 @@ class Resume extends Component {
             <h1 style={headerStyle}>Nossos Serviços</h1>
          </div>  
          <div className="row education">
-            <div className="three columns header-col">
-               <h1><span>Estética</span></h1>
-               <h1><span>Canina</span></h1>
+            <div className={`${headerCol} columns header-col`}>
+               {this.getHeader("Estética Canina")}
             </div>
 
-            <div className="nine columns main-col">
+            <div className={`${bodyCol} columns header-col`}>
                <div className="row item">
                   <div className="twelve columns">
-                  {/* {education} */}
-                  {/* <h3>Pet Shop</h3> */}
-                  <img src={canina}></img>
-                  <p>Produtos de alta tecnologia e especiais para cães. Na Jully Maria a estética canina é feita exclusivamente com a linha Hydra, da Pet Society, que garante o bem estar do seu animal.</p>
+                     <img src={canina}></img>
+                     <p>Produtos de alta tecnologia e especiais para cães. Na Jully Maria a estética canina é feita exclusivamente com a linha Hydra, da Pet Society, que garante o bem estar do seu animal.</p>
                   </div>
                </div>
             </div>
          </div>
          <div className="row education">
-            <div className="three columns header-col">
-               <h1><span>Estética</span></h1>
-               <h1><span>Felina</span></h1>
+            <div className={`${headerCol} columns header-col`}>
+               {this.getHeader("Estética Felina")}
             </div>
 
-            <div className="nine columns main-col">
+            <div className={`${bodyCol} columns header-col`}>
                <div className="row item">
                   <div className="twelve columns">
                   {/* {education} */}
@@ -98,34 +122,33 @@ class Resume extends Component {
             </div>
          </div>
          <div className="row education">
-            <div className="three columns header-col">
-               <h1><span>Clínica</span></h1>
-               <h1><span>Veterinária</span></h1>
+            <div className={`${headerCol} columns header-col`}>
+               {this.getHeader("Clínica Veterinária")}
             </div>
 
-            <div className="nine columns main-col">
+            <div className={`${bodyCol} columns header-col`}>
                <div className="row item">
                   <div className="twelve columns">
-                  {/* {education} */}
-                  {/* <h3>Pet Shop</h3> */}
-                  <img src={clinica}></img>
-                  <p>Equipe preparada para atender o seu pet e contribuir para que a vida dele seja mais saudável e duradoura. Conte com a Jully Maria sempre que seu bichinho precisar.</p>
+                     <img src={clinica}></img>
+                     <p>Equipe preparada para atender o seu pet e contribuir para que a vida dele seja mais saudável e duradoura. Conte com a Jully Maria sempre que seu bichinho precisar.</p>
                   </div>
                </div>
             </div>
          </div>
          <div className="row education">
-            <div className="three columns header-col">
-               <h2><span>Dermatologia</span></h2>
+            <div className={`${headerCol} columns header-col`}>
+               {
+                  isSmallScreen ? 
+                     (<h2 style={{textAlign:'center', lineHeight:'10vh', fontSize:'38px'}}><span>Dermatologia</span></h2>) :
+                     (<h2 style={{lineHeight:'10vh'}}><span>Dermatologia</span></h2>)
+               }               
             </div>
 
-            <div className="nine columns main-col">
+            <div className={`${bodyCol} columns header-col`}>
                <div className="row item">
                   <div className="twelve columns">
-                  {/* {education} */}
-                  {/* <h3>Pet Shop</h3> */}
-                  <img src={dermatologia}></img>
-                  <p>A pele do seu pet precisa de cuidados especiais. Assim como os humanos, eles podem desenvolver doenças dermatológicas, como, por exemplo, alergias, otites, infecções bacterianas e fúngicas, que comprometem a qualidade de vida do animal. Para garantir a saúde do seu pet, conte com os profissionais qualificados da Jully Maria.</p>
+                     <img src={dermatologia}></img>
+                     <p>A pele do seu pet precisa de cuidados especiais. Assim como os humanos, eles podem desenvolver doenças dermatológicas, como, por exemplo, alergias, otites, infecções bacterianas e fúngicas, que comprometem a qualidade de vida do animal. Para garantir a saúde do seu pet, conte com os profissionais qualificados da Jully Maria.</p>
                   </div>
                </div>
             </div>

@@ -50,11 +50,22 @@ class Portfolio extends Component {
       });
     }
 
+    const getWindowDimensions = () => {
+      const { innerWidth: width, innerHeight: height } = window;
+      return {
+        width,
+        height
+      };
+    }
+
     if (this.props.data) {      
       const isDesktop = this.state.matches;
+      //console.log(getWindowDimensions());
+      var dimensions = getWindowDimensions();
       var projects = this.props.data.projects.map(function (projects) {
-        var projectImage = 'images/portfolio/' + projects.image;
-        var image = require(`../assets/${projects.image}`);
+        var imageUrl = projects.image.replace('.jp','-min.jp');
+        var projectImage = 'images/portfolio/' + imageUrl;
+        var image = require(`../assets/${imageUrl}`);
 
         var style = {
           backgroundImage: `url(${image})`, 
@@ -65,8 +76,10 @@ class Portfolio extends Component {
           width: '25vh' 
         };
   
-        if(!isDesktop){
+        if(!isDesktop) {
           style.width = "100%";
+        } else if (dimensions.width <= 768) {
+          style.width = "20vh";
         }
 
         return (
