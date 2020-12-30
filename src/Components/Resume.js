@@ -88,7 +88,7 @@ class Resume extends Component {
                </div>
             </div>
          </div>
-         <div>
+         <div id="services">
             <h1 style={headerStyle}>Nossos Serviços</h1>
          </div>  
          <div className="row education">
